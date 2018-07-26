@@ -1,0 +1,18 @@
+body{
+  background-color:#ffff80;
+}
+.naslov{
+text-align: center;
+}
+#proba3{
+  color: #fff;
+
+}
+.container{
+  padding: 20px;
+  background-color: lightgrey;
+}
+
+.potpis{
+  text-align: left;
+}

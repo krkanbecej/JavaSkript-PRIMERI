@@ -1,20 +1,106 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <link rel="stylesheet" type="text/css" href="css.css">
-
-    </style>
-    <meta charset="utf-8">
-    <title> Aleksandar domaći</title>
-  </head>
+<html>
+<head>
+  <title>JavaScript primeri</title>
+  <link rel="stylesheet" href="css/master.css">
+  <script>
+function myFunction() {
+    document.getElementById("proba5").innerHTML = "Pokrenut je JavaScript iz head sekcije";
+}
+</script>
+<style media="screen">
+  h3{color: #920458;}
+</style>
+</head>
   <body>
-    <div class="zaglavlje
-    ">
-    <h3>Moje ime je  </h3>
-    <h3>Aleksandar Karapandža</h3>
-    </div>
-<div class="telo">
-  
+    <div class="naslov">
+<h2>Šta može Java Skript ?</h2>
+  <p>(refrešuj stranicu za povratak)</p>
+  </div>
+<div class="container">
+  <p id="proba">JavaSkript može da promeni stil u HTML dokumentu</p>
+
+  <button type="button" onclick="document.getElementById('proba').style.fontSize='35px' ">klikni da bi promenio stil</button>
+<!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
+<p id="proba2">JavaScript može da sakrije HTML element kao što je naprimer ovaj paragraf</p>
+
+<button type="button" onclick="document.getElementById('proba2').style.display='none'">klikni da bi sakrio paragraf</button>
+<!-- *****************************************************+ -->
+
+<p>JavaScript Može da prikaže skriveni HTML element</p>
+
+<p id="proba3" style="display:none">Zdravo ovo je do sada bilo skriveno u HTML dokumentu</p>
+
+<button type="button" onclick="document.getElementById('proba3').style.display='block'">Click Me!</button>
+<!--************************************************************  -->
+<p id="proba4"></p>
+<script>
+document.getElementById("proba4").innerHTML = "Ovaj tekst je zapravo rezultat pokrenutog JavaScript-a unutar HTML- Bodi sekcije";
+</script>
+<!-- *************************************************** -->
+<h4>Skript u head sekciji HTML dokumenta</h4>
+<p id="proba5">Klikom na dugme pokrenućeš JavaScript iz head sekcije</p>
+<button type="button" onclick="myFunction()">Klikni</button>
+<!--****************************************************************  -->
+<h5> Java skript prikaz podataka</h5>
+<p>JavaScript može da prikaže podatke na različite načine</p>
+<p>Prikazivanje podataka unutar HTML dokumenta <strong>innerHTML</strong> </p>
+<p>Takođe i korištenjem <strong>document.write()</strong>   </p>
+<p>prikaz podataka unutar iskačućeg prozora (alert boks) <strong>window.alert()</strong> </p>
+<p>prikaz unutar konzole brosvera <strong>console.log()</strong> </p>
+<p> <strong>document.getElementById(id)</strong> može koristiti da JavaScript pristupi html dokumentu  </p>
+<p>PRIMERI</p>
+<h1>Korištenje getElementById(id)</h1>
+<p>Naprimer u pozadini je 5+6 a prikazue se rezultat</p>
+<p id="proba6"></p>
+<script>
+document.getElementById("proba6").innerHTML = 5 + 6;
+</script>
+<h1>Korištenje document.write()</h1>
+<p>u pozadini je 5+6 a prikazue se rezultat</p>
+<script>
+document.write(5 + 6);
+</script>
+<h2>JS može da obriše ceo postojeći HTML kod</h2>
+<p>Klikom na dugme dobiće se rezultat izraza 5+6 </p>
+
+<button type="button" onclick="document.write(5 + 6)">klikni</button>
+<h2>JS može da prikaže nešto u iskačućem prozoru za obaveštenja</h2>
+<p>klikom na dugme pokrećete prozor obaveštenja</p>
+
+<button type="button" onclick="window.alert(5 + 6)">klikni</button>
+<h2>Activate debugging with F12</h2>
+
+<p>Select "Console" in the debugger menu. Then click Run again.</p>
+
+<script>
+console.log(5 + 6);
+</script>
+
+<h2>JavaScript iskazi (Statements)</h2>
+
+<p>A <b>JavaScript program</b> je lista <b>iskaza (Statements)</b> koji se izvršavaju pomoću računara</p>
+
+<p id="proba7"></p>
+
+<script>
+
+var x, y, z;  //  iskaz 1 (Statement)
+x = 5;        //  iskaz 2 (Statement)
+y = 6;        //  iskaz 3 (Statement)
+z = x + y;    //  iskaz 4 (Statement)
+
+document.getElementById("proba7").innerHTML =
+"Vrednost promenljive z je " + z + ".";
+
+</script>
+<h3>Treba znati da se iskazi u JavaScript-u realizuju jedan po jedan onim redom kojim su i zapisani</h3>
+<h3>Kada su razdvojeni tačka zarezom ; iskazi mogu da se pišu i u jednom redu naprimer a=5; b=6; c=a+b; </h3>
+<h3>JavaScript ignoriše višestruke razmake između reči i slova pa se ovo može koristiti za pravljenje preglednijeg koda</h3>
+<h3>JavaScript code blocks  JavaScript iskazi mogu da se grupišu zajedno u kod blokovima unutar vitičastih zagrada{....}</h3>
+<h3>Svrha kod blokova je da definiše iskaze koji će se realizovati zajedno</h3>
+<p>JavaSkript funkcije koriste iskaze grupisane u okviru blokova function myFunction() {..........}</p>
+
 <div class="potpis">
   <p >04.07.2018.godine <br />
   Aleksandar Karapandža</p>
