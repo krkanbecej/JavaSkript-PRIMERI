@@ -1,13 +1,26 @@
 body{
   background-color:#ffff80;
+  font-family: sans-serif;
+}
+h2{
+  color: green;
 }
 .naslov{
 text-align: center;
 }
 #proba3{
-  color: #fff;
-
+  color: #fff;}
+ #proba5{
+  color: blue;
 }
+#proba7{
+  color: red;
+}
+#proba9{
+  font-size: 20px;
+  color: red;
+}
+
 .container{
   padding: 20px;
   background-color: lightgrey;
@@ -16,5 +29,5 @@ text-align: center;
 .potpis{
   text-align: right;
   margin-top: 15px;
- 
+
 }

@@ -1,11 +1,12 @@
 <!DOCTYPE html>
+<html lang="sr">
 <html>
 <head>
   <title>JavaScript primeri</title>
   <link rel="stylesheet" href="css/master.css">
   <script>
 function myFunction() {
-    document.getElementById("proba5").innerHTML = "Pokrenut je JavaScript iz head sekcije";
+    document.getElementById("proba5").innerHTML = "Pokrenut je JavaScript iz head sekcije ovog HTML dokumenta";
 }
 </script>
 <style media="screen">
@@ -52,46 +53,42 @@ document.getElementById("proba4").innerHTML = "Ovaj tekst je zapravo rezultat po
 <p>PRIMERI</p>
 <h2>Korištenje getElementById(id)</h2>
 <p>Naprimer ispod ovog paragrafa u je skript koji u sebi ima operaciju 15+6 a  u HTML dokumentu prikazue se rezultat </p>
- <strong>  <p id="proba6"></p></strong> 
+ <strong>  <p id="proba6"></p></strong>
 <script>
 document.getElementById("proba6").innerHTML = 15 + 6;
 </script>
 <h2>Korištenje document.write()</h2>
 <p>u pozadini je 5+6 a prikazue se rezultat</p>
+<p id="proba9">
 <script>
 document.write(5 + 6);
 </script>
+</p>
 <h2>JS može da obriše ceo postojeći HTML kod</h2>
 <p>Klikom na dugme dobiće se rezultat izraza 5+6 </p>
 
-<button type="button" onclick="document.write(5 + 6)">klikni</button>
+<button type="button" onclick="document.write('Sve je obrisano <br> refrešuj stranicu za povratak')">klikni</button>
 <h2>JS može da prikaže nešto u iskačućem prozoru za obaveštenja</h2>
 <p>klikom na dugme pokrećete prozor obaveštenja</p>
 
-<button type="button" onclick="window.alert(5 + 6)">klikni</button>
-<h2>Activate debugging with F12</h2>
+<button type="button" onclick="window.alert('neko obaveštenje')">klikni</button>
 
-<p>Select "Console" in the debugger menu. Then click Run again.</p>
-
-<script>
-console.log(5 + 6);
-</script>
 
 <h2>JavaScript iskazi (Statements)</h2>
 
 <p>A <b>JavaScript program</b> je lista <b>iskaza (Statements)</b> koji se izvršavaju pomoću računara</p>
-
+<p>primer iskazi koji se realizuju pomoću skripta u sledećem redu x=55;y=60; z=x+y </p>
 <p id="proba7"></p>
 
 <script>
 
 var x, y, z;  //  iskaz 1 (Statement)
-x = 5;        //  iskaz 2 (Statement)
-y = 6;        //  iskaz 3 (Statement)
+x = 55;        //  iskaz 2 (Statement)
+y = 60;        //  iskaz 3 (Statement)
 z = x + y;    //  iskaz 4 (Statement)
 
 document.getElementById("proba7").innerHTML =
-"Vrednost promenljive z je " + z + ".";
+"Vrednost promenljive z je  " + z + ".";
 
 </script>
 <h3>Treba znati da se iskazi u JavaScript-u realizuju jedan po jedan onim redom kojim su i zapisani</h3>
