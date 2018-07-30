@@ -7,6 +7,10 @@ h2{
 }
 .naslov{
 text-align: center;
+background-color:#f3c913;
+border-radius:25px;
+color:#fff;
+
 }
 #proba3{
   color: #fff;}
@@ -20,10 +24,14 @@ text-align: center;
   font-size: 20px;
   color: red;
 }
+#proba10 {
+   color:blue;
+   }
 
 .container{
   padding: 20px;
   background-color: lightgrey;
+  border-radius:25px;
 }
 
 .potpis{

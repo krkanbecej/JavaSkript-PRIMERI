@@ -2,6 +2,7 @@
 <html lang="sr">
 <html>
 <head>
+<meta charset="utf-8">
   <title>JavaScript primeri</title>
   <link rel="stylesheet" href="css/master.css">
   <script>
@@ -15,8 +16,8 @@ function myFunction() {
 </head>
   <body>
     <div class="naslov">
-<h2>Šta može Java Skript ?</h2>
-  <p>(refrešuj stranicu za povratak)</p>
+<h1>Šta može Java Skript ?</h1>
+  <p>(posle neke akcije refrešuj stranicu za povratak)</p>
   </div>
 <div class="container">
   <p id="proba">JavaSkript može da promeni stil u HTML dokumentu</p>
@@ -32,7 +33,7 @@ function myFunction() {
 
 <p id="proba3" style="display:none">Zdravo ovo je do sada bilo skriveno u HTML dokumentu</p>
 
-<button type="button" onclick="document.getElementById('proba3').style.display='block'">Click Me!</button>
+<button type="button" onclick="document.getElementById('proba3').style.display='block'">Klikni</button>
 <!--************************************************************  -->
 <p id="proba4"></p>
 <script>
@@ -97,6 +98,30 @@ document.getElementById("proba7").innerHTML =
 <h3>JavaScript code blocks  JavaScript iskazi mogu da se grupišu zajedno u kod blokovima unutar vitičastih zagrada{....}</h3>
 <h3>Svrha kod blokova je da definiše iskaze koji će se realizovati zajedno</h3>
 <p>JavaSkript funkcije koriste iskaze grupisane u okviru blokova function myFunction() {..........}</p>
+
+
+<h2>JavaScript može prikazati sistemsko vreme i datum</h2>
+
+<button type="button"
+onclick="document.getElementById('proba10').innerHTML = Date()">
+klikni i prikaži datum i vreme</button>
+
+<p id="proba10"></p>
+
+<h2 id="proba11">JavaScript može da promeni sadržaj HTML dokumenta</h2>
+
+<button type="button" onclick='document.getElementById("proba11").innerHTML = "Zdravo ovo je JavaScript promena sadrzaja dokumenta!"'>Klikni za promenu</button>
+
+<h2>JavaScript može menjati  HTML atribute.</h2>
+
+<p>U ovom primeru JavaScript menja  HTML src (source) atribut  ta prikazanu sliku (sijalica).</p>
+
+<button onclick="document.getElementById('svetlo').src='slike/sijalica2.png'">Ugasi sijalicu</button>
+
+<img id="svetlo" src="slike/sijalica1.png" style="width:100px">
+
+<button onclick="document.getElementById('svetlo').src='slike/sijalica1.png'">Upali sijalicu</button>
+
 </div>
 <div class="potpis">
   <p >04.07.2018.godine <br />
