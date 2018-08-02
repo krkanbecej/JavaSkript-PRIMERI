@@ -12,6 +12,11 @@ function myFunction() {
 </script>
 <style media="screen">
   h3{color: #920458;}
+  #demo16{
+  width:90px;
+  height:90px;
+  }
+  
 </style>
 </head>
   <body>
@@ -99,6 +104,26 @@ document.getElementById("proba7").innerHTML =
 <h3>Svrha kod blokova je da definiše iskaze koji će se realizovati zajedno</h3>
 <p>JavaSkript funkcije koriste iskaze grupisane u okviru blokova function myFunction() {..........}</p>
 
+<h2>JavaScript iskazi (Statements) u okviru blokova</h2>
+
+<p>JavaScript blok kod ispisuje se unutar zagrada {  }</p>
+<p>kodovi unutar bloka realizuju se zajedno</p>
+
+<button type="button" onclick="myFunction()">Prikaži blok kod</button>
+
+<p id="demo14"></p>
+<p id="demo15"></p>
+<img id="demo16"></img>
+<p id="demo17"></p>
+<script>
+function myFunction() {
+    document.getElementById("demo14").innerHTML = "Zdravo!";
+    document.getElementById("demo15").innerHTML = "Kako si danas?!";
+    document.getElementById('demo16').src='slike/smajli.png';
+    document.getElementById("demo17").innerHTML = "Svi ovi realizovani kodovi su zapisani unutar blok koda";
+}
+</script>
+
 
 <h2>JavaScript može prikazati sistemsko vreme i datum</h2>
 
@@ -111,6 +136,7 @@ klikni i prikaži datum i vreme</button>
 <h2 id="proba11">JavaScript može da promeni sadržaj HTML dokumenta</h2>
 
 <button type="button" onclick='document.getElementById("proba11").innerHTML = "Zdravo ovo je JavaScript promena sadrzaja dokumenta!"'>Klikni za promenu</button>
+
 
 <h2>JavaScript može menjati  HTML atribute.</h2>
 
