@@ -6,8 +6,8 @@
   <title>JavaScript primeri</title>
   <link rel="stylesheet" href="css/master.css">
   <script>
-function myFunction() {
-    document.getElementById("proba5").innerHTML = "Pokrenut je JavaScript iz head sekcije ovog HTML dokumenta";
+function mFunction() {
+    document.getElementById("proba55").innerHTML = "Pokrenut je JavaScript iz head sekcije ovog HTML dokumenta";
 }
 </script>
 <style media="screen">
@@ -16,25 +16,25 @@ function myFunction() {
   width:90px;
   height:90px;
   }
-  
+
 </style>
 </head>
   <body>
     <div class="naslov">
-<h1>Šta može Java Skript ?</h1>
+<h1>Šta može JavaSkript ?</h1>
   <p>(posle neke akcije refrešuj stranicu za povratak)</p>
   </div>
 <div class="container">
-  <p id="proba">JavaSkript može da promeni stil u HTML dokumentu</p>
+  <h2 id="proba">JavaSkript može da promeni stil u HTML dokumentu</h2>
 
   <button type="button" onclick="document.getElementById('proba').style.fontSize='35px' ">klikni da bi promenio stil</button>
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
-<p id="proba2">JavaScript može da sakrije HTML element kao što je naprimer ovaj paragraf</p>
+<h2 id="proba2">JavaScript može da sakrije HTML element kao što je naprimer ovaj tekst</h2>
 
-<button type="button" onclick="document.getElementById('proba2').style.display='none'">klikni da bi sakrio paragraf</button>
+<button type="button" onclick="document.getElementById('proba2').style.display='none'">klikni da bi sakrio tekst</button>
 <!-- *****************************************************+ -->
 
-<p>JavaScript Može da prikaže skriveni HTML element</p>
+<h2>JavaScript Može da prikaže skriveni HTML element</h2>
 
 <p id="proba3" style="display:none">Zdravo ovo je do sada bilo skriveno u HTML dokumentu</p>
 
@@ -47,9 +47,10 @@ document.getElementById("proba4").innerHTML = "Ovaj tekst je zapravo rezultat po
 <!-- *************************************************** -->
 <h4>Skript u head sekciji HTML dokumenta</h4>
 <p id="proba5">Klikom na dugme pokrenućeš JavaScript iz head sekcije</p>
-<button type="button" onclick="myFunction()">Klikni</button>
+<p id="proba55"></p>
+<button type="button" onclick="mFunction()">Klikni</button>
 <!--****************************************************************  -->
-<h5> Java skript prikaz podataka</h5>
+<h2> Java skript prikaz podataka</h2>
 <p>JavaScript može da prikaže podatke na različite načine</p>
 <p>Prikazivanje podataka unutar HTML dokumenta <strong>innerHTML</strong> </p>
 <p>Takođe i korištenjem <strong>document.write()</strong>   </p>
@@ -71,9 +72,9 @@ document.write(5 + 6);
 </script>
 </p>
 <h2>JS može da obriše ceo postojeći HTML kod</h2>
-<p>Klikom na dugme dobiće se rezultat izraza 5+6 </p>
+<p>Klikom na dugme obrisaćeš ceo html kod </p>
 
-<button type="button" onclick="document.write('Sve je obrisano <br> refrešuj stranicu za povratak')">klikni</button>
+<button type="button" onclick="document.write('Sve je obrisano <br> vrati se na predhodnu stranicu u pretraživaču')">klikni</button>
 <h2>JS može da prikaže nešto u iskačućem prozoru za obaveštenja</h2>
 <p>klikom na dugme pokrećete prozor obaveštenja</p>
 
@@ -108,23 +109,19 @@ document.getElementById("proba7").innerHTML =
 
 <p>JavaScript blok kod ispisuje se unutar zagrada {  }</p>
 <p>kodovi unutar bloka realizuju se zajedno</p>
-
 <button type="button" onclick="myFunction()">Prikaži blok kod</button>
-
 <p id="demo14"></p>
 <p id="demo15"></p>
 <img id="demo16"></img>
-<p id="demo17"></p>
+<p id="demo18"></p>
 <script>
 function myFunction() {
     document.getElementById("demo14").innerHTML = "Zdravo!";
     document.getElementById("demo15").innerHTML = "Kako si danas?!";
     document.getElementById('demo16').src='slike/smajli.png';
-    document.getElementById("demo17").innerHTML = "Svi ovi realizovani kodovi su zapisani unutar blok koda";
+    document.getElementById("demo18").innerHTML = "Svi ovi realizovani kodovi su zapisani unutar blok koda";
 }
 </script>
-
-
 <h2>JavaScript može prikazati sistemsko vreme i datum</h2>
 
 <button type="button"

@@ -10,6 +10,8 @@ text-align: center;
 background-color:#f3c913;
 border-radius:25px;
 color:#fff;
+padding: 25px;
+margin-bottom: 5px;
 
 }
 #proba3{
@@ -29,7 +31,7 @@ color:#fff;
    }
 
 .container{
-  padding: 20px;
+  padding: 50px;
   background-color: lightgrey;
   border-radius:25px;
 }
