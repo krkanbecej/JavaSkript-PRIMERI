@@ -1,0 +1,1 @@
+document.write ("Ovaj tekst je zapisan u eksternom JavaSkript fajlu čije ime je eksterni.js");

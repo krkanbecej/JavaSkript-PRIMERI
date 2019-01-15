@@ -40,6 +40,8 @@ function mFunction() {
 
 <button type="button" onclick="document.getElementById('proba3').style.display='block'">Klikni</button>
 <!--************************************************************  -->
+<h2>Pozicioniranje JavaScript koda u HTML dokumentu</h2>
+<h4>Skript u body sekciji HTML dokumenta</h4>
 <p id="proba4"></p>
 <script>
 document.getElementById("proba4").innerHTML = "Ovaj tekst je zapravo rezultat pokrenutog JavaScript-a unutar HTML- Bodi sekcije";
@@ -50,27 +52,40 @@ document.getElementById("proba4").innerHTML = "Ovaj tekst je zapravo rezultat po
 <p id="proba55"></p>
 <button type="button" onclick="mFunction()">Klikni</button>
 <!--****************************************************************  -->
+<h4>Eksterni JavaScript dokument</h4>
+<script src="eksterni.js">
+        
+</script>
+
+
+<!--****************************************************************  -->
 <h2> Java skript prikaz podataka</h2>
 <p>JavaScript može da prikaže podatke na različite načine</p>
 <p>Prikazivanje podataka unutar HTML dokumenta <strong>innerHTML</strong> </p>
 <p>Takođe i korištenjem <strong>document.write()</strong>   </p>
 <p>prikaz podataka unutar iskačućeg prozora (alert boks) <strong>window.alert()</strong> </p>
 <p>prikaz unutar konzole brosvera <strong>console.log()</strong> </p>
-<p> <strong>document.getElementById(id)</strong> može koristiti da JavaScript pristupi html dokumentu  </p>
+<p> <strong>document.getElementById(id)</strong> može koristiti da JavaScript pristupi bilo kom html tagu  </p>
 <p>PRIMERI</p>
 <h2>Korištenje getElementById(id)</h2>
-<p>Naprimer ispod ovog paragrafa u je skript koji u sebi ima operaciju 15+6 a  u HTML dokumentu prikazue se rezultat </p>
+<p>Naprimer ispod ovog paragrafa je paragraf id="proba6" u kom  JavaScript prikazuje rezultat matematičke operacije 15+6  </p>
  <strong>  <p id="proba6"></p></strong>
 <script>
 document.getElementById("proba6").innerHTML = 15 + 6;
 </script>
 <h2>Korištenje document.write()</h2>
-<p>u pozadini je 5+6 a prikazue se rezultat</p>
+<p>document.write(5 + 6 * 5)  prikazuje rezultat operacije</p>
 <p id="proba9">
 <script>
-document.write(5 + 6);
+document.write(5 + 6 * 5);
 </script>
 </p>
+<p>document.write("5 + 6 * 5")  prikazuje operaciju</p>
+<p id="proba9">
+<script>
+  document.write("5 + 6 * 5");
+  </script>
+  </p>
 <h2>JS može da obriše ceo postojeći HTML kod</h2>
 <p>Klikom na dugme obrisaćeš ceo html kod </p>
 
@@ -144,7 +159,15 @@ klikni i prikaži datum i vreme</button>
 <img id="svetlo" src="slike/sijalica1.png" style="width:100px">
 
 <button onclick="document.getElementById('svetlo').src='slike/sijalica1.png'">Upali sijalicu</button>
+<h2>JavaScript može da upravja iskačućim prozorima</h2>
+<script>
+function pozdrav(){
+ var response = prompt(" Kako se zovete?");
+ alert("Vaše ime je " + response + " i dobro napredujete u učenju JavaScripta");
+ }
+</script>
 
+<button type="button" onclick="pozdrav()">Prikaži iskačući prozor</button>
 </div>
 <div class="potpis">
   <p >04.07.2018.godine <br />
