@@ -27,7 +27,7 @@ function mFunction() {
 <div class="container">
   <h2 id="proba">JavaSkript može da promeni stil u HTML dokumentu</h2>
 
-  <button type="button" onclick="document.getElementById('proba').style.fontSize='35px' ">klikni da bi promenio stil</button>
+  <button type="button" onclick="document.getElementById('proba').style.fontSize='35px'">klikni da bi promenio stil</button>
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
 <h2 id="proba2">JavaScript može da sakrije HTML element kao što je naprimer ovaj tekst</h2>
 
@@ -54,7 +54,7 @@ document.getElementById("proba4").innerHTML = "Ovaj tekst je zapravo rezultat po
 <!--****************************************************************  -->
 <h4>Eksterni JavaScript dokument</h4>
 <script src="eksterni.js">
-        
+
 </script>
 
 
@@ -159,6 +159,7 @@ klikni i prikaži datum i vreme</button>
 <img id="svetlo" src="slike/sijalica1.png" style="width:100px">
 
 <button onclick="document.getElementById('svetlo').src='slike/sijalica1.png'">Upali sijalicu</button>
+<!-- Upravljanje iskačućim prozorima *************************************-->
 <h2>JavaScript može da upravja iskačućim prozorima</h2>
 <script>
 function pozdrav(){
@@ -166,8 +167,63 @@ function pozdrav(){
  alert("Vaše ime je " + response + " i dobro napredujete u učenju JavaScripta");
  }
 </script>
-
 <button type="button" onclick="pozdrav()">Prikaži iskačući prozor</button>
+<!--  koristenje sistemskog dana - use Date *****************************-->
+<h2>JavaScript može da prikaže koji je danas dan</h2>
+<p id="proba30"></p>
+<script> //  koristenje sistemskog dana - use Date
+var day;
+switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+    day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case  6:
+    day = "Saturday";
+  
+   }
+    //Srpski prevod - translate to Serbian
+if (day=='Monday'){
+  srb= 'ponedeljak';
+}
+if (day=='Tuesday'){
+  srb= 'utorak';
+}
+if (day=='Wednesday'){
+  srb= 'sreda';
+}
+if (day=='Thursday'){
+  srb= 'četvrtak';
+}
+if (day=='Friday'){
+  srb= 'petak';
+}
+if (day=='Saturday'){
+  srb= 'subota';
+}
+if (day=='Sunday'){
+  srb= 'nedelja';
+}
+
+//  document.getElementById("proba30").innerHTML = "Today is " + day;
+document.getElementById("proba30").innerHTML = "Danas je "  + srb;
+</script>
+
+
 </div>
 <div class="potpis">
   <p >04.07.2018.godine <br />
