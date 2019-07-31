@@ -10,14 +10,7 @@ function mFunction() {
     document.getElementById("proba55").innerHTML = "Pokrenut je JavaScript iz head sekcije ovog HTML dokumenta";
 }
 </script>
-<style media="screen">
-  h3{color: #920458;}
-  #demo16{
-  width:90px;
-  height:90px;
-  }
 
-</style>
 </head>
   <body>
     <div class="naslov">
@@ -89,13 +82,13 @@ document.write(5 + 6 * 5);
 <h2>JS može da obriše ceo postojeći HTML kod</h2>
 <p>Klikom na dugme obrisaćeš ceo html kod </p>
 
-<button type="button" onclick="document.write('Sve je obrisano <br> vrati se na predhodnu stranicu u pretraživaču')">klikni</button>
+<button type="button" onclick="document.write('Sve je obrisano <br> refrešuj stranicu')">klikni</button>
 <h2>JS može da prikaže nešto u iskačućem prozoru za obaveštenja</h2>
 <p>klikom na dugme pokrećete prozor obaveštenja</p>
 
 <button type="button" onclick="window.alert('neko obaveštenje')">klikni</button>
 
-
+<!-- iskazi *******************************************************-->
 <h2>JavaScript iskazi (Statements)</h2>
 
 <p>A <b>JavaScript program</b> je lista <b>iskaza (Statements)</b> koji se izvršavaju pomoću računara</p>
@@ -119,24 +112,24 @@ document.getElementById("proba7").innerHTML =
 <h3>JavaScript code blocks  JavaScript iskazi mogu da se grupišu zajedno u kod blokovima unutar vitičastih zagrada{....}</h3>
 <h3>Svrha kod blokova je da definiše iskaze koji će se realizovati zajedno</h3>
 <p>JavaSkript funkcije koriste iskaze grupisane u okviru blokova function myFunction() {..........}</p>
-
+<!-- BLOKOVI  ******************************************************-->
 <h2>JavaScript iskazi (Statements) u okviru blokova</h2>
-
 <p>JavaScript blok kod ispisuje se unutar zagrada {  }</p>
 <p>kodovi unutar bloka realizuju se zajedno</p>
 <button type="button" onclick="myFunction()">Prikaži blok kod</button>
 <p id="demo14"></p>
 <p id="demo15"></p>
-<img id="demo16"></img>
+<img id="demo16" src="slike/smajli.png" style="display:none">
 <p id="demo18"></p>
 <script>
 function myFunction() {
     document.getElementById("demo14").innerHTML = "Zdravo!";
     document.getElementById("demo15").innerHTML = "Kako si danas?!";
-    document.getElementById('demo16').src='slike/smajli.png';
+    document.getElementById("demo16").style='display:block';
     document.getElementById("demo18").innerHTML = "Svi ovi realizovani kodovi su zapisani unutar blok koda";
 }
 </script>
+<!-- sistemsko vreme ***************************************************-->
 <h2>JavaScript može prikazati sistemsko vreme i datum</h2>
 
 <button type="button"
@@ -152,7 +145,7 @@ klikni i prikaži datum i vreme</button>
 
 <h2>JavaScript može menjati  HTML atribute.</h2>
 
-<p>U ovom primeru JavaScript menja  HTML src (source) atribut  ta prikazanu sliku (sijalica).</p>
+<p>U ovom primeru JavaScript menja  HTML src (source) atribut  za prikazanu sliku (sijalica).</p>
 
 <button onclick="document.getElementById('svetlo').src='slike/sijalica2.png'">Ugasi sijalicu</button>
 
@@ -220,8 +213,34 @@ if (day=='Sunday'){
 }
 
 //  document.getElementById("proba30").innerHTML = "Today is " + day;
-document.getElementById("proba30").innerHTML = "Danas je "  + srb;
+document.getElementById("proba30").innerHTML = "Danas je <br><strong> "  + srb + "</strong>";
 </script>
+
+<!-- animacije u JavaScript-u - animation in JavaScript *************************** -->
+<h2>JavaScript može da pravi animacije </h2>
+<p><button onclick="myMove()">Pokreni animaciju</button></p> 
+
+<div id ="animo">
+  <div id ="pokret"></div>
+</div>
+
+<script>
+function myMove() {
+  var okvir = document.getElementById("pokret");   
+  var stoj = 0;
+  var id = setInterval(frame, 10);//brzina - speed
+  function frame() {
+    if (stoj == 350) {
+      clearInterval(id);
+    } else {
+      stoj++; 
+      okvir.style.top = stoj + "px"; 
+      okvir.style.left = stoj + "px"; 
+    }
+  }
+}
+</script>
+
 
 
 </div>
