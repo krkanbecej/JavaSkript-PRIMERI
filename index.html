@@ -240,8 +240,23 @@ function myMove() {
   }
 }
 </script>
+<!-- doga]aji - events ********************************-->
 
 
+<h2>Događaji koji mogu biti okidači za pokretanje JavaScript-a</h2>
+<div onmouseover="mOver(this)" onmouseout="mOut(this)" 
+style="background-color:red;width:120px;height:38px;padding:20px; border-radius: 20px;color: white; ">
+<strong>Peđi mišem<br> preko mene</strong></div>
+
+<script>
+function mOver(obj) {
+  obj.innerHTML = "<strong> Hvala </strong><br> pokrenuo si događaj "
+}
+
+function mOut(obj) {
+  obj.innerHTML = "<strong>ZDRAVO</strong>"
+}
+</script>
 
 </div>
 <div class="potpis">
