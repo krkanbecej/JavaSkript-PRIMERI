@@ -29,7 +29,7 @@ function mFunction() {
 
 <h2>JavaScript Može da prikaže skriveni HTML element</h2>
 
-<p id="proba3" style="display:none">Zdravo ovo je do sada bilo skriveno u HTML dokumentu</p>
+<p id="proba3" style="display:none"><strong>ZDRAVO <br>ovo je do sada bilo skriveno u HTML dokumentu</strong></p>
 
 <button type="button" onclick="document.getElementById('proba3').style.display='block'">Klikni</button>
 <!--************************************************************  -->
@@ -257,6 +257,18 @@ function mOut(obj) {
   obj.innerHTML = "<strong>ZDRAVO</strong>"
 }
 </script>
+<!-- Pokrenuti novi dokument Novi dokument  -->
+<h2>JavaScript može pokrenuti novi dokument</h2>
+
+<input type="button" value="Pokreni novi dokument" onclick="newDoc()">
+
+<script>
+function newDoc() {
+  window.location.assign("krka.html")
+}
+</script>
+
+
 
 </div>
 <div class="potpis">
