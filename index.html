@@ -14,25 +14,32 @@ function mFunction() {
 </head>
   <body>
     <div class="naslov">
-<h1>Šta može JavaSkript ?</h1>
-  <p>(posle neke akcije refrešuj stranicu za povratak)</p>
+<h1> JavaSkript </h1>
+<hr id="zaglavlje">
+  <h3>(posle akcije refrešuj stranicu za povratak)</h3>
   </div>
 <div class="container">
+  <article>
   <h2 id="proba">JavaSkript može da promeni stil u HTML dokumentu</h2>
 
   <button type="button" onclick="document.getElementById('proba').style.fontSize='35px'">klikni da bi promenio stil</button>
+</article>
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
+<article>
 <h2 id="proba2">JavaScript može da sakrije HTML element kao što je naprimer ovaj tekst</h2>
 
 <button type="button" onclick="document.getElementById('proba2').style.display='none'">klikni da bi sakrio tekst</button>
+</article>
 <!-- *****************************************************+ -->
-
+<article>
 <h2>JavaScript Može da prikaže skriveni HTML element</h2>
 
 <p id="proba3" style="display:none"><strong>ZDRAVO <br>ovo je do sada bilo skriveno u HTML dokumentu</strong></p>
 
 <button type="button" onclick="document.getElementById('proba3').style.display='block'">Klikni</button>
+</article>
 <!--************************************************************  -->
+<article>
 <h2>Pozicioniranje JavaScript koda u HTML dokumentu</h2>
 <h4>Skript u body sekciji HTML dokumenta</h4>
 <p id="proba4"></p>
@@ -47,11 +54,11 @@ document.getElementById("proba4").innerHTML = "Ovaj tekst je zapravo rezultat po
 <!--****************************************************************  -->
 <h4>Eksterni JavaScript dokument</h4>
 <script src="eksterni.js">
-
 </script>
-
+</article>
 
 <!--****************************************************************  -->
+<article>
 <h2> Java skript prikaz podataka</h2>
 <p>JavaScript može da prikaže podatke na različite načine</p>
 <p>Prikazivanje podataka unutar HTML dokumenta <strong>innerHTML</strong> </p>
@@ -59,13 +66,17 @@ document.getElementById("proba4").innerHTML = "Ovaj tekst je zapravo rezultat po
 <p>prikaz podataka unutar iskačućeg prozora (alert boks) <strong>window.alert()</strong> </p>
 <p>prikaz unutar konzole brosvera <strong>console.log()</strong> </p>
 <p> <strong>document.getElementById(id)</strong> može koristiti da JavaScript pristupi bilo kom html tagu  </p>
+</article>
+<!-- *********************** -->
+<article>
 <p>PRIMERI</p>
 <h2>Korištenje getElementById(id)</h2>
-<p>Naprimer ispod ovog paragrafa je paragraf id="proba6" u kom  JavaScript prikazuje rezultat matematičke operacije 15+6  </p>
- <strong>  <p id="proba6"></p></strong>
+<p>Naprimer ispod ovog paragrafa je paragraf  u kom  JavaScript ispisuje rezultat matematičke operacije 15+6 prilikom pkretanja sranice </p>
+  <p id="proba6"></p>
 <script>
 document.getElementById("proba6").innerHTML = 15 + 6;
 </script>
+<!-- ********************** -->
 <h2>Korištenje document.write()</h2>
 <p>document.write(5 + 6 * 5)  prikazuje rezultat operacije</p>
 <p id="proba9">
@@ -73,22 +84,29 @@ document.getElementById("proba6").innerHTML = 15 + 6;
 document.write(5 + 6 * 5);
 </script>
 </p>
+<!-- ************************* -->
 <p>document.write("5 + 6 * 5")  prikazuje operaciju</p>
 <p id="proba9">
 <script>
   document.write("5 + 6 * 5");
   </script>
   </p>
+</article>
+<article>
 <h2>JS može da obriše ceo postojeći HTML kod</h2>
 <p>Klikom na dugme obrisaćeš ceo html kod </p>
 
 <button type="button" onclick="document.write('Sve je obrisano <br> refrešuj stranicu')">klikni</button>
+</article>
+<!-- ************* js alert ***************** -->
+<article>
 <h2>JS može da prikaže nešto u iskačućem prozoru za obaveštenja</h2>
 <p>klikom na dugme pokrećete prozor obaveštenja</p>
 
 <button type="button" onclick="window.alert('neko obaveštenje')">klikni</button>
-
+</article>
 <!-- iskazi *******************************************************-->
+<article>
 <h2>JavaScript iskazi (Statements)</h2>
 
 <p>A <b>JavaScript program</b> je lista <b>iskaza (Statements)</b> koji se izvršavaju pomoću računara</p>
@@ -112,7 +130,9 @@ document.getElementById("proba7").innerHTML =
 <h3>JavaScript code blocks  JavaScript iskazi mogu da se grupišu zajedno u kod blokovima unutar vitičastih zagrada{....}</h3>
 <h3>Svrha kod blokova je da definiše iskaze koji će se realizovati zajedno</h3>
 <p>JavaSkript funkcije koriste iskaze grupisane u okviru blokova function myFunction() {..........}</p>
+</article>
 <!-- BLOKOVI  ******************************************************-->
+<article>
 <h2>JavaScript iskazi (Statements) u okviru blokova</h2>
 <p>JavaScript blok kod ispisuje se unutar zagrada {  }</p>
 <p>kodovi unutar bloka realizuju se zajedno</p>
@@ -129,7 +149,9 @@ function myFunction() {
     document.getElementById("demo18").innerHTML = "Svi ovi realizovani kodovi su zapisani unutar blok koda";
 }
 </script>
+</article>
 <!-- sistemsko vreme ***************************************************-->
+<article>
 <h2>JavaScript može prikazati sistemsko vreme i datum</h2>
 
 <button type="button"
@@ -137,12 +159,15 @@ onclick="document.getElementById('proba10').innerHTML = Date()">
 klikni i prikaži datum i vreme</button>
 
 <p id="proba10"></p>
-
+<article>
+<!-- Promena sadržaja HTML dokumenta -->
+</article>
 <h2 id="proba11">JavaScript može da promeni sadržaj HTML dokumenta</h2>
 
 <button type="button" onclick='document.getElementById("proba11").innerHTML = "Zdravo ovo je JavaScript promena sadrzaja dokumenta!"'>Klikni za promenu</button>
-
-
+</article>
+<!-- Promena HTML atributa ******************* -->
+<article>
 <h2>JavaScript može menjati  HTML atribute.</h2>
 
 <p>U ovom primeru JavaScript menja  HTML src (source) atribut  za prikazanu sliku (sijalica).</p>
@@ -152,7 +177,9 @@ klikni i prikaži datum i vreme</button>
 <img id="svetlo" src="slike/sijalica1.png" style="width:100px">
 
 <button onclick="document.getElementById('svetlo').src='slike/sijalica1.png'">Upali sijalicu</button>
+</article>
 <!-- Upravljanje iskačućim prozorima *************************************-->
+<article>
 <h2>JavaScript može da upravja iskačućim prozorima</h2>
 <script>
 function pozdrav(){
@@ -161,7 +188,9 @@ function pozdrav(){
  }
 </script>
 <button type="button" onclick="pozdrav()">Prikaži iskačući prozor</button>
+</article>
 <!--  koristenje sistemskog dana - use Date *****************************-->
+<article>
 <h2>JavaScript može da prikaže koji je danas dan</h2>
 <p id="proba30"></p>
 <script> //  koristenje sistemskog dana - use Date
@@ -215,8 +244,9 @@ if (day=='Sunday'){
 //  document.getElementById("proba30").innerHTML = "Today is " + day;
 document.getElementById("proba30").innerHTML = "Danas je <br><strong> "  + srb + "</strong>";
 </script>
-
+</article>
 <!-- animacije u JavaScript-u - animation in JavaScript *************************** -->
+<article>
 <h2>JavaScript može da pravi animacije </h2>
 <p><button onclick="myMove()">Pokreni animaciju</button></p> 
 
@@ -240,12 +270,13 @@ function myMove() {
   }
 }
 </script>
+</article>
 <!-- doga]aji - events ********************************-->
-
+<article>
 
 <h2>Događaji koji mogu biti okidači za pokretanje JavaScript-a</h2>
 <div onmouseover="mOver(this)" onmouseout="mOut(this)" 
-style="background-color:red;width:120px;height:38px;padding:20px; border-radius: 20px;color: white; ">
+style="background-color:#900c3f;width:120px;height:38px;padding:20px; border-radius: 20px;color: white; ">
 <strong>Peđi mišem<br> preko mene</strong></div>
 
 <script>
@@ -257,7 +288,9 @@ function mOut(obj) {
   obj.innerHTML = "<strong>ZDRAVO</strong>"
 }
 </script>
+</article>
 <!-- Pokrenuti novi dokument Novi dokument  -->
+<article>
 <h2>JavaScript može pokrenuti novi dokument</h2>
 
 <input type="button" value="Pokreni novi dokument" onclick="newDoc()">
@@ -267,10 +300,9 @@ function newDoc() {
   window.location.assign("krka.html")
 }
 </script>
+</article>
+</div><!-- End container -->
 
-
-
-</div>
 <div class="potpis">
   <p >04.07.2018.godine <br />
   Aleksandar Karapandža</p>

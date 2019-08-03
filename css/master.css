@@ -1,23 +1,37 @@
 body{
-  background-color:#ffff80;
+  background-color:#c70039;
   font-family: sans-serif;
 }
+button{
+  background-color: #900c3f;
+  color: #ffc30f;
+  padding: 10px;
+  font-size:large ;
+}
 h2{
-  color: #001b80;
+  color: #581845;
   }
-h3{color: #9911a0;
-  }
+h3{color:#581845;}
+h1 {color: white;
+  font-size: 3em;
 
+}
 .naslov{
 text-align: center;
-background-color:#f3c913;
+background-color:#ffc30f;
 border-radius:25px;
 color:#fff;
 padding: 25px;
-margin-bottom: 5px;
-
+margin-top: 55px;
 }
-
+#zaglavlje{
+width: 2px;
+size: 100%;
+color: #000;
+}
+article{
+  padding:30px;
+}
   
   #demo16{
          width:90px;
@@ -27,14 +41,17 @@ margin-bottom: 5px;
 #proba3{
   color: #fff;}
  #proba5{
-  color: blue;
+  color: #581845;
+  font-size: large;
 }
+#proba6{
+  color: white;}
 #proba7{
-  color: red;
+  color: white;
 }
-#proba9{
+#proba9 {
   font-size: 20px;
-  color: red;
+  color: white;
 }
 #proba10 {
    color:blue;
@@ -42,13 +59,15 @@ margin-bottom: 5px;
 
 .container{
   padding: 50px;
-  background-color: lightgrey;
-  border-radius:25px;
+  background-color: #ffc30f;
+  border-radius:45px;
+  margin-top: 30px;
 }
 
 .potpis{
   text-align: right;
   margin-top: 15px;
+  padding: 20px 20px;
 
 }
 /* animacija-animation */
@@ -58,12 +77,12 @@ margin-bottom: 5px;
   position: relative;
   /* background: yellow; */
   border-radius: 10px;
-  border: 5px solid blue;
+  border: 5px solid #900c3f;
 }
 #pokret {
   width: 50px;
   height: 50px;
   position: absolute;
-  background-color: red;
+  background-color: #581845;
   border-radius: 5px 20px 5px;
 }
